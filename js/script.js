@@ -10,3 +10,9 @@ if (tombolTema) {
     }
   });
 }
+
+// ===== BAGIAN MAHASISWA 2 (Beranda) =====
+
+// ===== BAGIAN MAHASISWA 3 (Profil dan Kegiatan) =====
+
+// ===== BAGIAN MAHASISWA 4 (Kontak) =====
