@@ -1,13 +1,13 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 :root {
-  --lumut: #1d3b2c;
-  --daun: #2f6b4a;
-  --latar: #eef2ec;
-  --kartu: #ffffff;
-  --teks: #1b2420;
-  --garis: #c9d4cb;
-  --kritis: #a4281f;
-  --terancam: #b35c00;
+    --lumut: #1d3b2c;
+    --daun: #2f6b4a;
+    --latar: #eef2ec;
+    --kartu: #ffffff;
+    --teks: #1b2420;
+    --garis: #c9d4cb;
+    --kritis: #a4281f;
+    --terancam: #b35c00;
 }
 body { font-family: Georgia, "Times New Roman", serif; color: var(--teks); background-color: var(--latar); line-height: 1.7; }
 
@@ -31,8 +31,8 @@ body.gelap .filter-btn { background-color: #1a2a22; color: #e6ece8; border-color
 body.gelap .form-kontak input, body.gelap .form-kontak textarea { background-color: #1a2a22; color: #e6ece8; border-color: #2f4a3b; }
 .sembunyi { display: none; }
 @media (max-width: 600px) {
-  .navbar { flex-direction: column; }
-  .menu { gap: 14px; }
+    .navbar { flex-direction: column; }
+    .menu { gap: 14px; }
 }
 
 /* ==== BAGIAN MAHASISWA 2 (Beranda) ==== */
@@ -40,3 +40,8 @@ body.gelap .form-kontak input, body.gelap .form-kontak textarea { background-col
 /* ==== BAGIAN MAHASISWA 3 (Profil dan Kegiatan) ==== */
 
 /* ==== BAGIAN MAHASISWA 4 (Kontak) ==== */
+.form-kontak { max-width: 520px; }
+.form-kontak label { display: block; margin-top: 14px; }
+.form-kontak input, .form-kontak textarea { width: 100%; padding: 8px 10px; border: 1px solid var(--garis); border-radius: 6px; font-family: inherit; font-size: 16px; }
+#tombol-kirim { margin-top: 16px; padding: 10px 18px; border: none; border-radius: 6px; background-color: var(--daun); color: white; font-family: inherit; cursor: pointer; }
+#status-form { margin-top: 12px; font-weight: bold; }
