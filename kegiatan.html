@@ -22,8 +22,84 @@
   </header>
   <!-- Konten utama -->
   <main>
-    
+    <section>
+      <h2>Daftar hewan</h2>
+      <p>Pilih status untuk menyaring daftar. Klik tombol pada kartu untuk melihat detail.</p>
+      <div class="filter">
+        <button type="button" class="filter-btn aktif" data-filter="semua">Semua</button>
+        <button type="button" class="filter-btn" data-filter="kritis">Kritis</button>
+        <button type="button" class="filter-btn" data-filter="terancam">Terancam</button>
+      </div>
+      <div class="grid-card">
+        <article class="card" data-status="kritis" data-nama="Harimau Sumatra" data-latin="Panthera tigris sumatrae" data-badge="Kritis (CR)" data-habitat="Hutan hujan Sumatra" data-ancaman="Perburuan dan hilangnya hutan akibat alih fungsi lahan.">
+          <img class="foto" src="images/harimau-sumatra.jpg" alt="Harimau Sumatra" />
+          <h3>Harimau Sumatra</h3>
+          <p class="latin">Panthera tigris sumatrae</p>
+          <span class="badge kritis">Kritis (CR)</span>
+          <button type="button" class="tombol-detail">Lihat detail</button>
+        </article>
+        <article class="card" data-status="kritis" data-nama="Badak Jawa" data-latin="Rhinoceros sondaicus" data-badge="Kritis (CR)" data-habitat="Taman Nasional Ujung Kulon, Banten" data-ancaman="Populasi sangat kecil di satu lokasi, rentan bencana dan penyakit.">
+          <img class="foto" src="images/badak-jawa.jpg" alt="Badak Jawa" />
+          <h3>Badak Jawa</h3>
+          <p class="latin">Rhinoceros sondaicus</p>
+          <span class="badge kritis">Kritis (CR)</span>
+          <button type="button" class="tombol-detail">Lihat detail</button>
+        </article>
+        <article class="card" data-status="kritis" data-nama="Gajah Sumatra" data-latin="Elephas maximus sumatranus" data-badge="Kritis (CR)" data-habitat="Hutan dataran rendah Sumatra" data-ancaman="Konflik dengan manusia dan penyempitan habitat.">
+          <img class="foto" src="images/gajah-sumatra.jpg" alt="Gajah Sumatra" />
+          <h3>Gajah Sumatra</h3>
+          <p class="latin">Elephas maximus sumatranus</p>
+          <span class="badge kritis">Kritis (CR)</span>
+          <button type="button" class="tombol-detail">Lihat detail</button>
+        </article>
+        <article class="card" data-status="kritis" data-nama="Orangutan Tapanuli" data-latin="Pongo tapanuliensis" data-badge="Kritis (CR)" data-habitat="Hutan Batang Toru, Sumatra Utara" data-ancaman="Pembukaan hutan dan populasi yang terpecah-pecah.">
+          <img class="foto" src="images/orangutan-tapanuli.jpg" alt="Orangutan Tapanuli" />
+          <h3>Orangutan Tapanuli</h3>
+          <p class="latin">Pongo tapanuliensis</p>
+          <span class="badge kritis">Kritis (CR)</span>
+          <button type="button" class="tombol-detail">Lihat detail</button>
+        </article>
+        <article class="card" data-status="terancam" data-nama="Komodo" data-latin="Varanus komodoensis" data-badge="Terancam (EN)" data-habitat="Pulau Komodo, Rinca, dan Flores" data-ancaman="Perubahan iklim, hilangnya mangsa, dan kerusakan habitat.">
+          <img class="foto" src="images/komodo.jpg" alt="Komodo" />
+          <p class="latin">Varanus komodoensis</p>
+          <span class="badge terancam">Terancam (EN)</span>
+          <button type="button" class="tombol-detail">Lihat detail</button>
+        </article>
+        <article class="card" data-status="terancam" data-nama="Owa Jawa" data-latin="Hylobates moloch" data-badge="Terancam (EN)" data-habitat="Hutan Jawa Barat dan Jawa Tengah" data-ancaman="Hutan yang terfragmentasi dan perdagangan satwa liar.">
+          <img class="foto" src="images/owa-jawa.jpg" alt="Owa Jawa" />
+          <h3>Owa Jawa</h3>
+          <p class="latin">Hylobates moloch</p>
+          <span class="badge terancam">Terancam (EN)</span>
+          <button type="button" class="tombol-detail">Lihat detail</button>
+        </article>
+        <article class="card" data-status="terancam" data-nama="Elang Jawa" data-latin="Nisaetus bartelsi" data-badge="Terancam (EN)" data-habitat="Hutan pegunungan Pulau Jawa" data-ancaman="Hilangnya hutan dan perburuan untuk dipelihara.">
+          <img class="foto" src="images/elang-jawa.jpg" alt="Elang Jawa" />
+          <h3>Elang Jawa</h3>
+          <p class="latin">Nisaetus bartelsi</p>
+          <span class="badge terancam">Terancam (EN)</span>
+          <button type="button" class="tombol-detail">Lihat detail</button>
+        </article>
+        <article class="card" data-status="terancam" data-nama="Anoa" data-latin="Bubalus depressicornis" data-badge="Terancam (EN)" data-habitat="Hutan Sulawesi" data-ancaman="Perburuan untuk daging dan tanduk, serta penebangan hutan.">
+          <img class="foto" src="images/anoa.jpg" alt="Anoa" />
+          <h3>Anoa</h3>
+          <p class="latin">Bubalus depressicornis</p>
+          <span class="badge terancam">Terancam (EN)</span>
+          <button type="button" class="tombol-detail">Lihat detail</button>
+        </article>
+      </div>
+    </section>
   </main>
+  <!-- Modal detail hewan -->
+  <div id="modal" class="modal sembunyi" role="dialog" aria-modal="true" aria-labelledby="modal-judul">
+    <div class="modal-isi">
+      <button type="button" id="tutup-modal">Tutup</button>
+      <h2 id="modal-judul"></h2>
+      <p id="modal-latin" class="latin"></p>
+      <p id="modal-status"></p>
+      <p id="modal-habitat"></p>
+      <p id="modal-ancaman"></p>
+    </div>
+  </div>
   <!-- Footer -->
   <footer>
     <p>&copy; 2026 Program Studi D3 Teknik Informatika Politeknik Negeri Cilacap.</p>
