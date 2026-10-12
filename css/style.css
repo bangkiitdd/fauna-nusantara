@@ -49,8 +49,6 @@ body.gelap .foto { background-color: #101a15; }
 .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 13px; color: white; }
 .badge.kritis { background-color: var(--kritis); }
 .badge.terancam { background-color: var(--terancam); }
-
-
 /* ==== BAGIAN MAHASISWA 3 (Profil dan Kegiatan) ==== */
 
 /* ==== BAGIAN MAHASISWA 4 (Kontak) ==== */
