@@ -25,6 +25,8 @@ if (tombolKirim) {
     const status = document.getElementById("status-form");
     if (nama === "" || email === "" || pesan === "") {
       status.textContent = "Semua kolom wajib diisi.";
+    } else if (!kategori.includes("@") || !kategori.includes(".")) {
+      status.textContent = "Format kategori belum benar. Contoh: Laporan masalah Website";
     } else if (!email.includes("@") || !email.includes(".")) {
       status.textContent = "Format email belum benar. Contoh: nama@contoh.com";
     } else if (pesan.length < 10) {
